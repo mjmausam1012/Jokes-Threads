@@ -31,7 +31,8 @@ btn_thread.addEventListener("click", () => {
 })
 
 btn_All_thread.addEventListener("click", () => {
-        if(arr[(arr.length)]>=0) {
+        let i = arr[arr.length];
+        if(i>=0) {
         div1.innerText = arr[(arr.length)-2];
         usr.prepend(div1);
         }
