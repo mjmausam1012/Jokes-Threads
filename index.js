@@ -17,8 +17,12 @@ btn.addEventListener("click", (evt) => {
     evt.preventDefault();
     let thread = document.querySelector("#wrt-thread");
     let thread_val = thread.value;
-    arr.push(thread_val);
-    alert("Your threads is Add.")
+    if("" == thread_val) {
+        alert("Write your Threads...")
+    }else{
+        arr.push(thread_val);
+        alert("Your threads is Add.")
+    }
 });
 
 btn_thread.addEventListener("click", () => {
@@ -31,8 +35,11 @@ btn_thread.addEventListener("click", () => {
 })
 
 btn_All_thread.addEventListener("click", () => {
-        div1.innerText = arr[(arr.length)-2];
-        usr.prepend(div1);
+    let i = arr.length;
+    if(i>1){
+    div1.innerText = arr[(arr.length)-2];
+    usr.prepend(div1);
+    }
 })
 
 const getFacts = async () => {
