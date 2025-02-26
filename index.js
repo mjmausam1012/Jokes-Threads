@@ -31,11 +31,8 @@ btn_thread.addEventListener("click", () => {
 })
 
 btn_All_thread.addEventListener("click", () => {
-        let i = arr[arr.length];
-        if(i>=0) {
         div1.innerText = arr[(arr.length)-2];
         usr.prepend(div1);
-        }
 })
 
 const getFacts = async () => {
