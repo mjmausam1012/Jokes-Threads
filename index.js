@@ -25,7 +25,7 @@ btn_thread.addEventListener("click", () => {
     for (let i=(arr.length)-1; i<arr.length; i++){
         if(i>=0){
         div.innerText = arr[i];
-        usr.append(div);
+        usr.prepend(div);
         }
     }
 })
@@ -34,7 +34,7 @@ btn_All_thread.addEventListener("click", () => {
         let i = arr[(arr.length)-2];
         console.log(i);
         div1.innerText = arr[(arr.length)-2];
-        usr.append(div1);
+        usr.prepend(div1);
 })
 
 const getFacts = async () => {
