@@ -43,7 +43,7 @@ btn_All_thread.addEventListener("click", () => {
 })
 
 const getFacts = async () => {
-    const URL = "https://hindi-jokes-api.onrender.com/jokes/6?api_key=90012273eeff539c40c4ff3d112d";
+    const URL = "https://cors-anywhere.herokuapp.com/https://hindi-jokes-api.onrender.com/jokes/6?api_key=90012273eeff539c40c4ff3d112d";
     let response = await fetch(URL);
     let fact = await response.json();
     fac1.innerText = fact.data[0].jokeContent;;
