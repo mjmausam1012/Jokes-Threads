@@ -43,20 +43,20 @@ btn_All_thread.addEventListener("click", () => {
 })
 
 const getFacts = async () => {
-    const URL = "https://cors-anywhere.herokuapp.com/https://hindi-jokes-api.onrender.com/jokes/6?api_key=90012273eeff539c40c4ff3d112d";
+    const URL = "https://quote-generator-api-six.vercel.app/api/quotes/?limit=6";
     let response = await fetch(URL);
     let fact = await response.json();
-    fac1.innerText = fact.data[0].jokeContent;;
+    fac1.innerText = fact.data[0].quote;
     usr.append(fac1)
-    fac2.innerText = fact.data[1].jokeContent;;
+    fac2.innerText = fact.data[1].quote;
     usr.append(fac2)
-    fac3.innerText = fact.data[2].jokeContent;;
+    fac3.innerText = fact.data[2].quote;
     usr.append(fac3)
-    fac4.innerText = fact.data[3].jokeContent;;
+    fac4.innerText = fact.data[3].quote;
     usr.append(fac4)
-    fac5.innerText = fact.data[4].jokeContent;;
+    fac5.innerText = fact.data[4].quote;
     usr.append(fac5)
-    fac6.innerText = fact.data[5].jokeContent;;
+    fac6.innerText = fact.data[5].quote;
     usr.append(fac6)
 }
 
